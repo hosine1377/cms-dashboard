@@ -1,0 +1,38 @@
+.addNewProduct {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 600;
+  margin: 1rem;
+}
+
+.form {
+  background-color: var(--white);
+  padding: 1rem;
+}
+
+.form-group {
+  width: 100%;
+  background-color: var(--grey);
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.form-group input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: black;
+}
+
+.addNewProduct-btn {
+  background-color: var(--blue) !important;
+  color: var(--white) !important ;
+  margin: 1rem;
+  text-align: end;
+}

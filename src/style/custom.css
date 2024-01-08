@@ -1,0 +1,26 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@import './reset.css';
+@import './customModal.css';
+@font-face {
+  font-family: lalezar;
+  src: url('/public/fonts/Lalezar-Regular.ttf');
+}
+
+*,
+body,
+html {
+  font-family: lalezar;
+}
+/* #root {
+  width: 61%;
+} */
+:root {
+  --white: #fff;
+  --grey: #f0f0f0;
+  --blue: #471aaa;
+}
+
+body {
+  background-color: var(--grey);
+  /* display: flex; */
+}

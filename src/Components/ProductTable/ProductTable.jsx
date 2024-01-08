@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import './ProductTable.css'
 import DeleteModal from '../DeleteModal/DeleteModal'
 import DetailsModal from '../DetailsModal/DetailsModal'
+import EditModal from '../EditModal/EditModal'
 
 function ProductTable() {
   const [isShowModal, setIsShowModal] = useState(false)
   const [isShowDetailsModal, setIsShowDetailsModal] = useState(false)
+  const [isShowEditModal, setIsShowEditModal] = useState(false)
+
   const deleteModalCancelAction = () => {
     console.log('مدال کنسل شد')
     setIsShowModal(false)
@@ -18,6 +21,10 @@ function ProductTable() {
   const closeDetailsModal = () => {
     console.log('مودال بسته شد')
     setIsShowDetailsModal(false)
+  }
+  const updateProductInfos = (event) => {
+    event.preventDefault()
+    console.log('محصول ویراش شد')
   }
   return (
     <>
@@ -59,7 +66,13 @@ function ProductTable() {
                 >
                   حذف{' '}
                 </button>
-                <button className="products-table-btn btn"> ویرایش</button>
+                <button
+                  className="products-table-btn btn"
+                  onClick={() => setIsShowEditModal(true)}
+                >
+                  {' '}
+                  ویرایش
+                </button>
               </td>
             </tr>
           </tbody>
@@ -72,6 +85,12 @@ function ProductTable() {
         />
       )}
       {isShowDetailsModal && <DetailsModal onHide={closeDetailsModal} />}
+      {isShowEditModal && (
+        <EditModal
+          onClose={() => setIsShowEditModal(false)}
+          onSubmit={(event) => updateProductInfos(event)}
+        />
+      )}
     </>
   )
 }

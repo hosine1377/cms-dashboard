@@ -1,0 +1,23 @@
+.edit-modal-form {
+  width: 400px;
+  height: auto;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.edit-modal-title {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.edite-form-submit {
+  padding: 0.5rem;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+  text-align: center;
+}

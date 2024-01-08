@@ -1,0 +1,15 @@
+.table {
+  margin: 2rem 0;
+}
+.img-table {
+  width: 200px;
+  /* height: 200px; */
+}
+th {
+  width: min-content;
+}
+
+.products-table-btn {
+  background-color: var(--blue) !important;
+  color: var(--white) !important;
+}

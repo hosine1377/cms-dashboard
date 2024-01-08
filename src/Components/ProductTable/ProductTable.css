@@ -13,3 +13,25 @@ th {
   background-color: var(--blue) !important;
   color: var(--white) !important;
 }
+
+/* start edit modal children  style*/
+
+/* end edit modal children  style*/
+.edit-product-form-group {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  background-color: #f4f4f4;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.edit-product-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: unset;
+  font-size: 14px;
+  color: #000;
+}

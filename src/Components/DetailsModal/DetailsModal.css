@@ -1,6 +1,7 @@
 .card-detailModal {
   padding: 1.5rem;
   background-color: var(--white);
+  width: 350px;
 }
 th {
   margin: 0 0.5rem !important;

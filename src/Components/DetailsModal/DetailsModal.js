@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './DetailsModal.css'
 import ReactDOM from 'react-dom'
-function DetailsModal({ onHide }) {
+function DetailsModal({ onHide, children }) {
   useEffect(() => {
     const checkKey = (event) => {
       if (event.keyCode === 32) {
@@ -14,24 +14,7 @@ function DetailsModal({ onHide }) {
   })
   return ReactDOM.createPortal(
     <div className="wrapper-modal active">
-      <div className="card-detailModal">
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th scope="col">اسم</th>
-              <th scope="col">قیمت</th>
-              <th scope="col">محبوبیت</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">لپتاپ</th>
-              <td>12،000،000</td>
-              <td>91%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      <div className="card-detailModal">{children}</div>
     </div>,
     document.getElementById('delete-modal'),
   )

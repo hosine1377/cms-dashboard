@@ -28,7 +28,7 @@ function AddNewProduct() {
   const addNewProduct = (event) => {
     event.preventDefault()
     console.log('محصول اضافه شد')
-    fetch(`http://localhost:3000/api/products`, {
+    fetch(`https://dashbord-cms.liara.run/api/products`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -28,7 +28,7 @@ function ProductTable() {
   }, [])
 
   const getItemApi = () => {
-    fetch('http://localhost:3000/api/products')
+    fetch('https://dashbord-cms.liara.run/api/products')
       .then((res) => res.json())
       .then((products) => setAllProduct(products))
   }
@@ -39,7 +39,7 @@ function ProductTable() {
   const deleteModalSubmitAction = () => {
     console.log('مدال تایید شد')
     console.log(productId)
-    fetch(`http://localhost:3000/api/products/${productId}`, {
+    fetch(`https://dashbord-cms.liara.run/api/products/${productId}`, {
       method: 'DELETE',
     })
       .then((res) => res.json())
@@ -67,7 +67,7 @@ function ProductTable() {
       colors: productNewColor,
     }
 
-    fetch(`http://localhost:3000/api/products/${productId}`, {
+    fetch(`https://dashbord-cms.liara.run/api/products/${productId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

@@ -5,7 +5,6 @@ import { useEffect } from 'react'
 import DetailsModal from '../DetailsModal/DetailsModal'
 import DeleteModal from '../DeleteModal/DeleteModal'
 import EditModal from '../EditModal/EditModal'
-import { json } from 'react-router-dom'
 function Comments() {
   const [allComments, setAllComments] = useState([])
   const [showDetailsModal, setShowDetailsModal] = useState(false)

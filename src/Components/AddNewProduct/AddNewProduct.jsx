@@ -25,6 +25,7 @@ function AddNewProduct() {
     colors: newProductColors,
   }
   console.log(newProductsInfos)
+
   const addNewProduct = (event) => {
     event.preventDefault()
     console.log('محصول اضافه شد')

@@ -161,6 +161,9 @@ function ProductTable() {
 
       {isShowModal && (
         <DeleteModal
+          title="
+        آیا از حذف اطمینان داری؟
+        "
           submitAction={deleteModalSubmitAction}
           cancelAction={deleteModalCancelAction}
         />

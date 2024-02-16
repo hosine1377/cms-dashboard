@@ -1,11 +1,11 @@
 import './DeleteModal.css'
 import ReactDOM from 'react-dom'
-function DeleteModal({ submitAction, cancelAction }) {
+function DeleteModal({ submitAction, cancelAction, title }) {
   return ReactDOM.createPortal(
     <div className="wrapper-modal active ">
       <div className="card-deleteModal">
         <div className="body-deleteModal">
-          <p>آیا از حذف اطمینان داری؟</p>
+          <p>{title}</p>
         </div>
         <div className="footer-deleteModal">
           <button
